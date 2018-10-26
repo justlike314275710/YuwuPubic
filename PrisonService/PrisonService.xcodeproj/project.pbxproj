@@ -384,6 +384,12 @@
 		EA428612211A9FC700418685 /* VIRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EA428611211A9FC700418685 /* VIRegisterRequest.m */; };
 		EA428615211A9FF000418685 /* VIRegisterResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EA428614211A9FF000418685 /* VIRegisterResponse.m */; };
 		EA428618211C118300418685 /* VIProLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA428617211C118300418685 /* VIProLoginViewModel.m */; };
+		EA492481218303C100D94F1A /* PSMoreServiceViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA492472218303C100D94F1A /* PSMoreServiceViewModel.m */; };
+		EA492482218303C100D94F1A /* PSMoreRoleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA492476218303C100D94F1A /* PSMoreRoleDetailViewController.m */; };
+		EA492483218303C100D94F1A /* PSMoreServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA492477218303C100D94F1A /* PSMoreServiceViewController.m */; };
+		EA492484218303C100D94F1A /* PSMoreModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EA49247A218303C100D94F1A /* PSMoreModel.m */; };
+		EA492485218303C100D94F1A /* MoreRoloCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA49247D218303C100D94F1A /* MoreRoloCell.m */; };
+		EA492486218303C100D94F1A /* serciceIiem.m in Sources */ = {isa = PBXBuildFile; fileRef = EA49247E218303C100D94F1A /* serciceIiem.m */; };
 		EA78E1C0215E233500BBEE58 /* VIRegisterProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EA78E1BF215E233500BBEE58 /* VIRegisterProgressView.m */; };
 		EA78E1C3215F63B200BBEE58 /* VIAddFamilesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA78E1C2215F63B200BBEE58 /* VIAddFamilesViewController.m */; };
 		EA78E1E12174874100BBEE58 /* PSAuthenticationHomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA78E1E02174874100BBEE58 /* PSAuthenticationHomePageViewController.m */; };
@@ -1263,6 +1269,18 @@
 		EA428614211A9FF000418685 /* VIRegisterResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIRegisterResponse.m; sourceTree = "<group>"; };
 		EA428616211C118300418685 /* VIProLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIProLoginViewModel.h; sourceTree = "<group>"; };
 		EA428617211C118300418685 /* VIProLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIProLoginViewModel.m; sourceTree = "<group>"; };
+		EA492472218303C100D94F1A /* PSMoreServiceViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMoreServiceViewModel.m; sourceTree = "<group>"; };
+		EA492473218303C100D94F1A /* PSMoreServiceViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMoreServiceViewModel.h; sourceTree = "<group>"; };
+		EA492475218303C100D94F1A /* PSMoreServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMoreServiceViewController.h; sourceTree = "<group>"; };
+		EA492476218303C100D94F1A /* PSMoreRoleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMoreRoleDetailViewController.m; sourceTree = "<group>"; };
+		EA492477218303C100D94F1A /* PSMoreServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMoreServiceViewController.m; sourceTree = "<group>"; };
+		EA492478218303C100D94F1A /* PSMoreRoleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMoreRoleDetailViewController.h; sourceTree = "<group>"; };
+		EA49247A218303C100D94F1A /* PSMoreModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSMoreModel.m; sourceTree = "<group>"; };
+		EA49247B218303C100D94F1A /* PSMoreModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSMoreModel.h; sourceTree = "<group>"; };
+		EA49247D218303C100D94F1A /* MoreRoloCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreRoloCell.m; sourceTree = "<group>"; };
+		EA49247E218303C100D94F1A /* serciceIiem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = serciceIiem.m; sourceTree = "<group>"; };
+		EA49247F218303C100D94F1A /* MoreRoloCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreRoloCell.h; sourceTree = "<group>"; };
+		EA492480218303C100D94F1A /* serciceIiem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = serciceIiem.h; sourceTree = "<group>"; };
 		EA78E1BE215E233500BBEE58 /* VIRegisterProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIRegisterProgressView.h; sourceTree = "<group>"; };
 		EA78E1BF215E233500BBEE58 /* VIRegisterProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIRegisterProgressView.m; sourceTree = "<group>"; };
 		EA78E1C1215F63B100BBEE58 /* VIAddFamilesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VIAddFamilesViewController.h; sourceTree = "<group>"; };
@@ -1989,6 +2007,7 @@
 		3E5D159720736C15000FC779 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				EA492470218303C100D94F1A /* more */,
 				EA78E1F32176E38300BBEE58 /* Me */,
 				EA78E1F22176E35900BBEE58 /* ServiceCentre */,
 				3EEEC67B20947594003B35B3 /* Guide */,
@@ -3464,6 +3483,57 @@
 			path = register;
 			sourceTree = "<group>";
 		};
+		EA492470218303C100D94F1A /* more */ = {
+			isa = PBXGroup;
+			children = (
+				EA492471218303C100D94F1A /* ViewModel */,
+				EA492474218303C100D94F1A /* Viewcontoller */,
+				EA492479218303C100D94F1A /* Model */,
+				EA49247C218303C100D94F1A /* View */,
+			);
+			path = more;
+			sourceTree = "<group>";
+		};
+		EA492471218303C100D94F1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA492472218303C100D94F1A /* PSMoreServiceViewModel.m */,
+				EA492473218303C100D94F1A /* PSMoreServiceViewModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA492474218303C100D94F1A /* Viewcontoller */ = {
+			isa = PBXGroup;
+			children = (
+				EA492475218303C100D94F1A /* PSMoreServiceViewController.h */,
+				EA492476218303C100D94F1A /* PSMoreRoleDetailViewController.m */,
+				EA492477218303C100D94F1A /* PSMoreServiceViewController.m */,
+				EA492478218303C100D94F1A /* PSMoreRoleDetailViewController.h */,
+			);
+			path = Viewcontoller;
+			sourceTree = "<group>";
+		};
+		EA492479218303C100D94F1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA49247A218303C100D94F1A /* PSMoreModel.m */,
+				EA49247B218303C100D94F1A /* PSMoreModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA49247C218303C100D94F1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA49247D218303C100D94F1A /* MoreRoloCell.m */,
+				EA49247E218303C100D94F1A /* serciceIiem.m */,
+				EA49247F218303C100D94F1A /* MoreRoloCell.h */,
+				EA492480218303C100D94F1A /* serciceIiem.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EA78E1F22176E35900BBEE58 /* ServiceCentre */ = {
 			isa = PBXGroup;
 			children = (
@@ -4017,6 +4087,7 @@
 				3EC7B6D8207C64A500DFBA65 /* PSIDCardViewController.m in Sources */,
 				3E5D1587207322D4000FC779 /* PSWeakTimer.m in Sources */,
 				EACBC1B52148E5F8004C0EAB /* PSUploadRelationRequest.m in Sources */,
+				EA492485218303C100D94F1A /* MoreRoloCell.m in Sources */,
 				3EEE777A20807C9800CAD179 /* PSFamilyServiceView.m in Sources */,
 				EAD18F7020D255020053F82B /* PSchangePhoneNextViewController.m in Sources */,
 				3E78B7452089CB76007DF162 /* PSMeetingsBaseRequest.m in Sources */,
@@ -4183,6 +4254,7 @@
 				3EDA519E20AC353700D8D019 /* PSLocalMeetingCountdownCell.m in Sources */,
 				3EDF0D8F20873F5C002D98BD /* PSFamilyBaseRequest.m in Sources */,
 				EAD18F7420D272D90053F82B /* PSfaceChangeViewController.m in Sources */,
+				EA492482218303C100D94F1A /* PSMoreRoleDetailViewController.m in Sources */,
 				3ED6A0B520A9250100D2223A /* PSCartViewController.m in Sources */,
 				3EEE776D2080581D00CAD179 /* PSCommerceViewController.m in Sources */,
 				3E0044F4207B55D80036CBC5 /* PSLoginTopView.m in Sources */,
@@ -4221,6 +4293,7 @@
 				EAD8DE5E2179BCD40035E22F /* PSDefaultJailResponse.m in Sources */,
 				3E171A0F20908EFF00B7D807 /* IFlyFaceImage.m in Sources */,
 				3E171A1E209092A300B7D807 /* IFlyFaceResultTrack.m in Sources */,
+				EA492481218303C100D94F1A /* PSMoreServiceViewModel.m in Sources */,
 				EA78E1C3215F63B200BBEE58 /* VIAddFamilesViewController.m in Sources */,
 				EA33786A21003C1D0081B907 /* UIView+Empty.m in Sources */,
 				3E5D160E2079A386000FC779 /* PSVisitorViewModel.m in Sources */,
@@ -4254,6 +4327,7 @@
 				3E171ACD20930B1300B7D807 /* PSWriteSuggestionRequest.m in Sources */,
 				3EEE77A9208447E300CAD179 /* PSComplaintViewController.m in Sources */,
 				EAB45364214A3C3A007A7627 /* PSAddFamiliesViewController.m in Sources */,
+				EA492484218303C100D94F1A /* PSMoreModel.m in Sources */,
 				EACBC19C2133F66F004C0EAB /* PSPerfectResponse.m in Sources */,
 				EA428615211A9FF000418685 /* VIRegisterResponse.m in Sources */,
 				3EEE7770208059AE00CAD179 /* PSLawViewController.m in Sources */,
@@ -4379,12 +4453,14 @@
 				EAB45370214B8727007A7627 /* PSPrisonerFamily.m in Sources */,
 				3E5D14C520721E72000FC779 /* UIImage+Color.m in Sources */,
 				3EA8F85E2090129400BA23B2 /* PSIMMessageManager.m in Sources */,
+				EA492486218303C100D94F1A /* serciceIiem.m in Sources */,
 				3ED6A0A920A9239C00D2223A /* PSPurchaseViewModel.m in Sources */,
 				3EDF0DA020882830002D98BD /* PSUploadBaseRequest.m in Sources */,
 				3EC7B6E6207CA29B00DFBA65 /* PSImagePickerController.m in Sources */,
 				3EC7B6D2207C647B00DFBA65 /* PSPersonalViewController.m in Sources */,
 				3EDF0DCB20889AA4002D98BD /* PSUserSession.m in Sources */,
 				EA4285F82119861400418685 /* VIRegisterViewController.m in Sources */,
+				EA492483218303C100D94F1A /* PSMoreServiceViewController.m in Sources */,
 				3EC7B6E1207C6EC100DFBA65 /* PSRoundRectTextField.m in Sources */,
 				3E5D150720731B04000FC779 /* PSSession.m in Sources */,
 				EA4285F12118092100418685 /* PSHistoryViewController.m in Sources */,

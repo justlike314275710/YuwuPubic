@@ -20,6 +20,8 @@
 #import "PSComplaintSuggestionViewController.h"
 #import "PSLoginViewModel.h"
 #import <AFNetworking/AFNetworking.h>
+#import "PSMoreServiceViewController.h"
+#import "PSMoreServiceViewModel.h"
 @interface PSServiceCentreViewController ()
 
 @end
@@ -135,9 +137,7 @@
          PSLegalServiceTableViewCell*cell= [tableView dequeueReusableCellWithIdentifier:@"PSLegalServiceTableViewCell"];
 
         [cell.moreButton bk_whenTapped:^{
-             NSString*coming_soon=
-            NSLocalizedString(@"coming_soon", @"敬请期待");
-             [PSTipsView showTips:coming_soon];
+             [self p_insertMoreServiceVC];
         }];
         [cell.FinanceButton bk_whenTapped:^{
              NSString*coming_soon=
@@ -169,7 +169,10 @@
    
 }
 
-
+- (void)p_insertMoreServiceVC {
+    PSMoreServiceViewController *PSMoreServiceVC = [[PSMoreServiceViewController alloc] initWithViewModel:[PSMoreServiceViewModel new]];
+    [self.navigationController pushViewController:PSMoreServiceVC animated:YES];
+}
 
 - (BOOL)hiddenNavigationBar{
     return YES;
