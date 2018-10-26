@@ -1,0 +1,16 @@
+//
+//  PSGuideManager.h
+//  PrisonService
+//
+//  Created by calvin on 2018/4/28.
+//  Copyright © 2018年 calvin. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "PSLaunchTask.h"
+
+@interface PSGuideManager : NSObject <PSLaunchTask>
+
++ (PSGuideManager *)sharedInstance;
+
+@end

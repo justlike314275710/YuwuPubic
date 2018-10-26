@@ -1,0 +1,341 @@
+/* 
+  Localizable.strings
+  PrisonService
+
+  Created by 狂生烈徒 on 2018/8/2.
+  Copyright © 2018年 calvin. All rights reserved.
+*/
+"man"="Nam";
+"women"="Nữ";
+"vistorloginout"="Bạn có thể sử dụng tính năng này sau khi đăng nhập.";
+"pushed_off_line"="Tài khoản của bạn đã được đăng nhập trên thiết bị khác và bạn đã bị ép ngoại tuyến";
+"Tips"="Nhắc";
+"apply_content"="Bạn thực hiện cuộc hẹn với%@và%@cho cuộc họp video từ xa Theo thỏa thuận, cuộc họp sẽ trả RMB%.2f và hệ thống sẽ tự động khấu trừ số dư từ gia đình.";
+"upload_head"="Xin vui lòng tải lên thực sự của tôi.Xóa avatar! Nếu không đăng ký không thể vượt qua!";
+"be_careful"="Chú ý";
+"faceError"="Hình đại diện bạn đã tải lên không thể nhận dạng được khuôn mặt. Vui lòng tải lên lại";
+"NetError"="Ngoại lệ máy chủ";
+"determine"="Xác định";
+"cancel"="Hủy bỏ";
+"Confirm_logout"="Bạn có chắc chắn muốn hủy không?";
+"InternetError"="Không thể kết nối với máy chủ, vui lòng kiểm tra mạng";
+
+"notice_title"="Xin lưu ý";
+"notice_content"="Thẻ điện thoại gia đình bạn đã mua sẽ được sử dụng để gặp video của %@";
+"notice_agreed"="Đồng ý";
+"notice_disagreed"="Không đồng ý";
+
+"NetError"="Ngoại lệ máy chủ";
+"goHome"="Quay lại trang chủ";
+"NoContents"="Chưa có nội dung";
+
+"login_error"="Số điện thoại di động hoặc mật khẩu sai";
+///登陆
+"account_error"="Mật khẩu tài khoản không phù hợp.";
+"code_error"="CAPTCHA sai lầm.";
+"account_code_error"="Số điện thoại hay CAPTCHA sai lầm.";
+//图片
+"sessionPrisonText"="Vi_sessionPrisonText";
+"serviceHallAdvDefault"="vi_serviceHallAdvDefault";
+//字符串
+"phoneNumber"="Điện thoại";
+"verifycode"="Mã xác minh";
+"please_enter_phone_number"="Nhập mã xác minh";
+"please_enter_verify_code"="Vui lòng nhập";
+"registration"="Đăng ký";
+"login"="Đăng nhập";
+"change_phone"="Thay đổi số điện thoại di động của bạn";
+"vistor_version"="Phiên bản công khai";
+
+////大厅
+"prison_manager"="Quản lý nhà tù";
+"Click to view"="Nhấp vào xem";
+"apply"="Đặt trước";
+"Reservation left"="Đặt trước";
+"appointment passed"="Thời gian cuộc hẹn của bạn đã trôi qua";
+"No appointments yet"="Bạn không có một cuộc hẹn";
+"No reservation"="Không hẹn";
+"Recent appointment"="Đặt trước";
+"serviceHall"="Phòng dịch vụ";
+"prison_introduction"="Hồ sơ nhà tù";
+"prison_opening"="Nhà tù mở";
+"work_dynamic"="Động lực làm việc";
+"laws_regulations"="Luật và quy định";
+"family_server"="Dịch vụ gia đình";
+"local_meetting"="Họp mặt đất";
+"e_mall"="Thương mại điện tử";
+"complain_advice"="Khiếu nại khiếu nại";
+"more_server"="Các dịch vụ khác";
+
+
+///亲情电话
+"apply_success"="Gặp ứng dụng thành công";
+"family_phone"="Điện thoại gia đình";
+"today"="Hôm nay";
+"today_after"="%ld ngày sau";
+"today_before"="%ld ngày trước";
+"new_month"="Tháng %ld";
+"year_month_day"="%ld năm\n %ld Vào ngày  %@ ";
+"Last_call_time"="Thời gian gọi cuối cùng: Không có cuộc gọi nào";
+"family_appointment"="Cuộc hẹn gia đình";
+"Phone_card_balance"="%@ Số dư thẻ điện thoại";
+"month_Times"="Tôi sẽ gặp bạn trong tháng này";
+"gobuy"="Mua";
+"one"="Thời đại";
+"day"="Ngày";
+"hour"="Giờ";
+"min"="Phút";
+
+"Directions_for_use"="Hướng dẫn sử dụng";
+"Application_familyPhone"="Đăng ký cuộc gọi gia đình";
+"UseHelp"="1、Theo quy định của nhà tù，Chỉ một phần của tù nhân mới cung cấp các cuộc phỏng vấn video từ xa，Vui lòng tham khảo nhà tù để biết chi tiết. \n2、Phần mềm Dịch vụ Trại giam chỉ cung cấp cho người thân từ xa trực tiếp video. Tần suất họp sau các quy định của trại giam. \n3、Video từ xa đáp ứng toàn bộ bản ghi. Vui lòng tuân thủ luật pháp và các quy định trong cuộc họp，Cấm truyền thông tin năng lượng tiêu cực，Nếu có hành vi bất hợp pháp，Công ty sẽ cung cấp bằng chứng âm thanh và video cho các phòng ban có liên quan. \n4、Mỗi khi bạn gặp, bạn phải trả một khoản phí dịch vụ nhất định. Bên sạc là Công ty TNHH Công nghệ Guoke Zhengxin (Bắc Kinh).";
+
+///购物车
+"shopping_cart"="Giỏ hàng";
+"Phone_CARDS"="Thẻ gọi điện thoại gia đình";
+"settlement"="Tra giỏ(%ld)";
+"A_combined"="Giá trị";
+"Future_generations"="  QuanXuan";
+
+
+///家属服务
+"sentence"="Câu gốc";
+"sentence_start"="Ngày của câu gốc";
+"sentence_end"="Ngày kết thúc câu gốc";
+"Reduced_number"="Chuyển đổi tích lũy";
+"Current_term"="Ngày tù";
+"Pocket_money"="Tình trạng tiền bỏ túi";
+"Consumption_prison"="Tiêu thụ trong tù";
+
+
+//投诉建议
+"public_information"="Thông tin công khai";
+"complaint_feedback"="Phản hồi khiếu nại";
+"Complaints_Suggestions"="Khiếu nại khiếu nại";
+"Please_enter_title"="Vui lòng nhập tiêu đề";
+"Please_enter_your_complaint"="Vui lòng nhập khiếu nại của bạn và chúng tôi sẽ tiếp tục cải thiện cho bạn.";
+"prison_reply"="Đã gửi thành công, hãy kiên nhẫn và đợi nhà tù trả lời";
+"feedback"="Đã gửi thành công, cảm ơn bạn đã phản hồi";
+
+//会见状态
+"meet_PENDING"="Đang xem xét";
+"meet_PASSED"="Để được nhìn thấy";
+"meet_DENIED"="Bị từ chối\nĐã hủy";
+"meet_CACELED"="Đã hủy";
+"meet_FINISHED"="Đã hoàn thành";
+"meet_EXPIRED"="Đã hết hạn";
+
+//个人中心
+"userCenterAccount"="Thông tin tài khoản";
+"userCenterHistory"="Lịch sử cuộc họp";
+"userCenterCart"="Hồ sơ mua sắm";
+"userCenterSetting"="Cài đặt";
+"userCenterBalance"="Số dư của tôi";
+"userCenterLogout"="Thoát tài khoản";
+"userCenterAddFamily"="Tăng gia đình.";
+"userCenterAccreditation"="Các gia đình thực";
+
+
+//注册
+"VI_member"="Tù nhân";
+"VI_card"="Tải lên thẻ ID";
+"VI_relation"="Mối quan hệ với các tù nhân";
+"VI_message"="Xác minh SMS";
+"Select_province"="Chọn tỉnh";
+"Select_city"="Thành phố";
+"Select_jails"="Nhà tù";
+"please_choose"="Hãy lựa chọn";
+"close"="Đóng";
+"prison_select_jails"="■ Tù nhân Nhà tù";
+"apply_rejected"="Đơn đăng ký của bạn đã bị nhà tù từ chối%@";
+"card_fail"="Tải lên thẻ ID không thành công";
+
+//新手引导
+"MemberGuideOne"="vi_MemberGuideOne";
+"MemberGuideTwo"="vi_MemberGuideTwo";
+"MemberGuideThree"="vi_MemberGuideThree";
+"IDCardGuideOne"="vi_IDCardGuideOne";
+"IDCardGuideTwo"="vi_IDCardGuideTwo";
+"RelationGuideOne"="vi_RelationGuideOne";
+"RelationGuideTwo"="vi_RelationGuideTwo";
+"MessageGuideOne"="vi_MessageGuideOne";
+"MessageGuideTwo"="vi_MessageGuideTwo";
+
+"guideOne"="vi_guideOne";
+"guideTwo"="vi_guideTwo";
+"guideThree"="vi_guideThree";
+
+//审核中界面
+"register_pending"="Đang xem xét";
+"register_switch"="Chuyển đổi tài khoản";
+"Please_wait_review"="Vui lòng chờ xem xét trại giam，Sau khi vượt qua, bạn có thể đăng nhập vào hệ thống";
+
+
+//账号信息
+"Contact_phonenumber"="Số liên lạc";
+"Home_address"="Địa chỉ nhà riêng";
+"Zip_code"="Mã zip";
+"gender"="Giới tính";
+"loginout"="Thoát tài khoản";
+"enter_Home_address"="Vui lòng nhập địa chỉ nhà riêng";
+"save"="Lưu";
+"enter_Zipcode"="Xin vui lòng nhập zip code";
+//设置
+"feedback"="Phản hồi";
+"input_yourfeedback"="Hãy nhập phản hồi ý kiến của bạn";
+"submit"="Gửi";
+"read_agree"="Tôi đã đọc và đồng ý.";
+"read_agree_usageProtocol"="Làm ơn đọc và đồng ý.《Tôi đã đọc và đồng ý》";
+"usageProtocol"="Thỏa thuận sử dụng phần mềm dịch vụ trại giam";
+"ContactUs"="Liên lạc với chúng tôi";
+"usageProtocol_ContactUs"="Thỏa thuận sử dụng phần mềm dịch vụ trại giam | Liên hệ với chúng tôi\n";
+
+"immediately"="Liên hệ ngay";
+"ContactDetail"="Địa chỉ: Tòa nhà 11, số 813, Changlin, Xisanqi, quận Hải Hải, Bắc Kinh \ 'n Mã zip: 100086 \ 'n  Điện thoại dịch vụ khách hàng：010-82911287-5032";
+//我的余额
+"Account_details"="Chi tiết tài khoản";
+"apply_refund"="Yêu cầu hoàn phí";
+"Available_balance"="%@ Số dư khả dụng";
+
+//会见历史
+"apply_data"="Ngày đăng ký";
+"meet_data"="Ngày họp";
+"Refuse_reason"="Lý do từ chối";
+"cancel_meet"="Hủy cuộc họp";
+
+
+//交易明细
+"PSRefundMeeting"="Áp dụng cho video để xem khấu trừ";
+"PSRefundRefund"="Thẻ điện thoại số dư tiền hoàn lại";
+"PSRefundSuccess"="Hoàn lại tiền thành công";
+"PSRefundFail"="Hoàn lại tiền thất bại";
+"Transaction_details"="Chi tiết giao dịch";
+
+//添加绑定服刑人员
+"add_inmates"="Tăng số lượng tù nhân";
+"Bind_prisoners"="Tù nhân ràng buộc";
+"Prisoner_number"="Số nhà tù&Mối quan hệ";
+"enter_PrisonerNumber"="Vui lòng nhập số nhà tù";
+"enter_Relationship"="Vui lòng nhập mối quan hệ với tù nhân";
+"enter_jail"="Vui lòng chọn nhà tù nơi có tù nhân.";
+"province"="Tỉnh";
+"city"="Thành phố/Quận";
+"prison"="Nhà tù";
+"binding"="Ràng buộc";
+"relation_title"="Lượt tải lên bản đồ chứng minh mối quan hệ";
+"OptionalBg"="vi_OptionalBg";
+
+//消息
+"Registration_message"="Thông báo đăng ký";
+"registration_approved"="Đánh giá đăng ký của bạn đã trôi qua";
+"registration_rejected"="Yêu cầu đăng ký của bạn đã bị từ chối%@";
+"Meet_message"="Thông báo cuộc họp";
+"Meet_abnormal"="Bất thường";
+"Interview_review"="Thông báo kiểm tra cuộc họp";
+"application_passed"="Ứng dụng đã được phê duyệt";
+"Application_completed"="Đã hoàn thành";
+"Application_review"="Ứng dụng đang được xem xét";
+"application_approved"="Đánh giá ứng dụng không thành công";
+"been_cancelled"="Đã bị hủy";
+"you_meet"="Của bạn%@Cuộc họp%@%@";
+"Field_interview"="Cuộc họp hiện trường";
+"you_localMeet"="Của bạn%@Họp mặt đất%@%@";
+"message"="Tin nhắn";
+"notice_meet"="Của bạn%@Cuộc họp%@";
+
+//实地会见
+"disappointment"="Bạn chưa hẹn";
+"Appointment_pending"="Đánh giá cuộc hẹn";
+"Appointment_countdowm"="Hẹn giờ cuộc hẹn-%ldNgày";
+"reservation"="Đặt hẹn ngay";
+"Confirm_appointment"="Đặt trước";
+"sure_meetting"="Bạn chắc chắn chọn%@Meet?";
+"apply_success"="Đơn xin gặp gỡ thành công";
+"cancel_success"="Hủy cuộc họp và thành công";
+"cancel_apply"="Hủy cuộc họp và thành công";
+"cancel_meeting"="Hủy cuộc hẹn";
+"application_examined"="Cuộc họp chưa được xem xét";
+"agenda_conflict"="Lên lịch xung đột";
+"plan_change"="Gói đã thay đổi";
+"other_reason"="Các lý do khác";
+//零花钱情况
+"Current_balance"="Số dư hiện tại";
+"expenditure"="Chi tiêu:%@";
+"income"="Thu nhập:%@";
+"balance"="Số dư:%@";
+"pinmoney_month"="%@Tháng";
+
+//游客
+"experience"="Kinh nghiệm";
+
+//家属认证
+"session_PENDING"="Ở đầu từ";
+"session_PENDING_title"="%@Nộp đơn xin xác nhận đang chỉnh sửa, xin hãy kiên nhẫn chờ";
+
+"session_DENIED"="Chưa qua";
+"session_DENIED_title"="%@Gửi đơn xin cấp giấy chứng nhận xác thực lại không qua chỉnh sửa, làm ơn";
+"session_DENIED_btntitle"="Tái xác nhận";
+
+"session_PASSED"="Tái xác nhận";
+
+"session_NONE"="Không xác thực";
+"session_NONE_title"="Gia đình ông vẫn chưa tiến hành xác thực";
+"session_NONE_btntitle"="Chứng nhận ngay lập tức.";
+
+
+//选择会见家属
+"chose_family"="Chọn gặp gia đình.";
+"add_family"="Tăng gia đình.";
+"add_family_tips"="Gợi ý: tối đa có thể lựa chọn ba người thân";
+"chose_ok"="Chọn đúng.";
+"add_max"="Tối đa có thể lựa chọn ba người thân";
+"add_notice_content"="Gặp gỡ hẹn ngày, Ben lần gặp tất cả các gia đình lựa chọn cần nhận dạng qua mặt người, phương để thực hiện video.";
+"me"="Tôi";
+
+
+//会见人脸识别
+"meet_face"="Gặp mặt người nhận dạng.";
+"face_success"="Gương mặt công nhận thành công.";
+"face_fail"="Gương mặt nhận thất bại.";
+"no_face"="Chưa thấy mặt người giám sát";
+"face_ing"="[Tôi]Mặt người trong nhận dạng.";
+"face_ing_familes"="[%@]Mặt người trong nhận dạng.";
+"face_ing_tips"="Nhận dạng gợi ý:Đang xác định các";
+"face_familes"="Ben lần gặp lại gia đình.";
+"face_familes_tips"="*Ben lần gặp phải tất cả qua gương mặt nhận diện；\n Làm ơn theo thứ tự chọn gương mặt bà con thực hiện nhận dạng";
+"meet_end"="Nhà tù Terminal đã cúp máy.";
+
+
+"details"="ChiTiết.";
+"common_function"="Chức năng thông thường";
+"legal_service"="Dịch vụ pháp lý";
+"more"="Thêm";
+"financial_embroilment"="Tranh chấp tài chính";
+"legitimate_interests"="Bảo vệ quyền và lợi ích hợp pháp của ngài.";
+"marriage_family"="Hôn nhân gia đình.";
+"law_protect"="Để cho pháp luật bảo vệ anh";
+"psychological_counseling"="Tư vấn tâm lý";
+"service_guarantee"="Dịch vụ tư vấn bảo đảm";
+"telephone_balance"="Điện thoại số dư";
+"recharge_record"="Kỷ lục nạp tiền";
+"my_advice"="Tư vấn của tôi";
+"add_relatives"="Thêm người thân";
+"home_page"="Trang nhất";
+"service_centre"="Dịch vụ";
+"home_me"="Của tôi";
+"click_login"="Nhấn vào đăng nhập";
+"coming_soon"="Chờ nhé";
+"Call"="Đã liên lạc";
+"call_expired"="Ben lầnĐã có thời hạn";
+"Remaining_time"="Thời gian còn lại";
+"answer"="TrảLời";
+"refuse"="TừChối";
+"speak_you"="Yêu cầu với bà";
+"H"="Khi";
+"M"="Điểm";
+"S"="Giây";
+
+
+
+
+"company_CopyRight"="GUOKE ZHENXIN KEJI BEIJING GUFEN YOUXIAN GONGSI \ ncopyright@2006-2015.All right reserved";

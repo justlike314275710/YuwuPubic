@@ -1,0 +1,27 @@
+//
+//  PSPrefixHeader.pch
+//  PrisonService
+//
+//  Created by calvin on 2018/4/2.
+//  Copyright © 2018年 calvin. All rights reserved.
+//
+
+#ifndef PSPrefixHeader_pch
+#define PSPrefixHeader_pch
+#ifdef __OBJC__
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "View+MASAdditions.h"
+#import <libextobjc/EXTScope.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIView+WebCache.h>
+#import "BlocksKit+UIKit.h"
+#import "PSMacro.h"
+#import "UIImage+Stretch.h"
+#import "MJRefresh.h"
+#import "PSTipsView.h"
+#import "LXFileManager.h"
+#import "PSJSONTool.h"
+#import "KGStatusBar.h"
+#endif /* PSPrefixHeader_pch */
+#endif

@@ -1,0 +1,15 @@
+//
+//  PSFamilyServiceItem.h
+//  PrisonService
+//
+//  Created by calvin on 2018/4/13.
+//  Copyright © 2018年 calvin. All rights reserved.
+//
+
+#import "PSFunctionItem.h"
+
+@interface PSFamilyServiceItem : PSFunctionItem
+
+@property (nonatomic, strong) NSString *content;
+
+@end
