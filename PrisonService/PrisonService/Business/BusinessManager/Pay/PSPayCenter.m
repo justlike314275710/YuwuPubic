@@ -42,7 +42,7 @@
     return self;
 }
 
-- (void)goPayWithPayInfo:(PSPayInfo *)payInfo callback:(PSPayCallback)callback {
+- (void)goPayWithPayInfo:(PSPayInfo *)payInfo type:(PayType)type  callback:(PSPayCallback)callback {
     self.payCallback = callback;
     self.payInfo = payInfo;
     self.payHandler = [self buildPayHandlerWith:payInfo];
@@ -55,7 +55,11 @@
                 self.payCallback(result,error);
             }
         }];
-        [self.payHandler goPayWithPayInfo:payInfo];
+        if (type == PayTypeRem) { //汇款
+            [self.payHandler goRemittanceWithPayInfo:payInfo];
+        } else {
+            [self.payHandler goPayWithPayInfo:payInfo];
+        }
     }else{
         if (self.payCallback) {
             NSError *error = [NSError errorWithDomain:@"不支持的支付方式！" code:101 userInfo:nil];
@@ -63,6 +67,8 @@
         }
     }
 }
+
+
 
 - (id<PSPayHandler>)buildPayHandlerWith:(PSPayInfo *)payInfo {
     id<PSPayHandler> handler = nil;
