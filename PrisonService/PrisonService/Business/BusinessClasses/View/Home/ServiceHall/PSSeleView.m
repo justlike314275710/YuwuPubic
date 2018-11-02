@@ -122,7 +122,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        UILabel *nameLab = [[UILabel alloc] initWithFrame:CGRectMake(20,15 ,100 ,20)];
+        UILabel *nameLab = [[UILabel alloc] initWithFrame:CGRectMake(20,15 ,300 ,20)];
         nameLab.text = [_datalist objectAtIndex:indexPath.row].name;
         nameLab.textColor = UIColorFromRGB(102, 102, 102);
         nameLab.font = FontOfSize(14);
@@ -192,7 +192,6 @@
 }
 
 - (void)disMissView {
-    
     [UIView animateWithDuration:0.35 animations:^{
         self.frame = CGRectMake(0,SCREEN_HEIGHT, SCREEN_WIDTH,325);
     } completion:^(BOOL finished) {

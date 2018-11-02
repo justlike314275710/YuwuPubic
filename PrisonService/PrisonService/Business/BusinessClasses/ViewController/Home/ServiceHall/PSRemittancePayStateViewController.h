@@ -14,10 +14,12 @@ typedef NS_ENUM(NSInteger, PayState) {
     payFailure = 1,
     payCancel = 2
 };
+typedef void (^CompleteBlock)(PayState state);
 @interface PSRemittancePayStateViewController : PSBusinessViewController
 @property (nonatomic,strong)PSPayInfo *info;
 @property (nonatomic,assign)PayState state;
-@property(nonatomic, strong) PSPrisonerDetail *prisoner;
+@property (nonatomic,strong)PSPrisonerDetail *prisoner;
+@property (nonatomic,copy)  CompleteBlock completeBlock;
 
 
 @end

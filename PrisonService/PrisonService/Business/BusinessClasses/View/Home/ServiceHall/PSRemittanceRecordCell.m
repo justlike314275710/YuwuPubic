@@ -38,7 +38,7 @@
     self.payStateLab.text = stateText;
     self.nameLab.text = model.prisonerName;
     NSDateFormatter *formater = [[NSDateFormatter alloc] init];
-    [formater setDateFormat:@"yyyy-MM dd-HH:mm"];
+    [formater setDateFormat:@"yyyy-MM-dd HH:mm"];
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:[model.createdAt doubleValue]/1000];
     NSString *time =  [formater stringFromDate:date];
     self.timeLab.text = time;
@@ -67,7 +67,7 @@
     [self.nameLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-15);
         make.centerY.mas_equalTo(self.amountLab);
-        make.width.mas_equalTo(200);
+        make.width.mas_equalTo(300);
         make.height.mas_equalTo(20);
     }];
     
@@ -75,7 +75,7 @@
     [self.timeLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-15);
         make.top.mas_equalTo(self.nameLab.mas_bottom).offset(1);
-        make.width.mas_equalTo(200);
+        make.width.mas_equalTo(300);
         make.height.mas_equalTo(20);
     }];
     
@@ -83,7 +83,7 @@
     [self.numbersLab mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(-15);
         make.centerY.mas_equalTo(self.timeLab.mas_bottom).offset(5);
-        make.width.mas_equalTo(200);
+        make.width.mas_equalTo(300);
         make.height.mas_equalTo(30);
     }];
     

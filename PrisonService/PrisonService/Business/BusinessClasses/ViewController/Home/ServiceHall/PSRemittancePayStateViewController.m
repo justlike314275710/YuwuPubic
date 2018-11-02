@@ -8,6 +8,7 @@
 
 #import "PSRemittancePayStateViewController.h"
 
+
 @interface PSRemittancePayStateViewController ()
 @property (nonatomic, strong) UIImageView *payStateImg;
 @property (nonatomic, strong) UILabel *payStateLab;
@@ -38,7 +39,14 @@
     @weakify(self);
     [completeBtn bk_whenTapped:^{
         @strongify(self);
-        [self dismissViewControllerAnimated:YES completion:nil];
+        if (self.state == payScuess) {
+            if (self.completeBlock) {
+                [self dismissViewControllerAnimated:NO completion:nil];
+                self.completeBlock(payScuess);
+            }
+        } else {
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
     }];
     [completeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(40);
@@ -118,6 +126,9 @@
     if (!_payStateImg) {
         _payStateImg = [UIImageView new];
         _payStateImg.image = [UIImage imageNamed:@"payfail"];
+        if (self.state == payScuess) {
+            _payStateImg.image = [UIImage imageNamed:@"payscuess"];
+        }
     }
     return _payStateImg;
 }

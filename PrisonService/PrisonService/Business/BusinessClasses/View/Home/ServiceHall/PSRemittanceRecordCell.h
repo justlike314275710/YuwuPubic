@@ -15,7 +15,6 @@
 @property (nonatomic ,strong) UILabel *nameLab;
 @property (nonatomic ,strong) UILabel *timeLab;
 @property (nonatomic ,strong) UILabel *numbersLab;
-
 @property (nonatomic ,strong) RemittanceRecode *model;
 
 

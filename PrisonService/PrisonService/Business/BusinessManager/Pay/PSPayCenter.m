@@ -45,6 +45,18 @@
 - (void)goPayWithPayInfo:(PSPayInfo *)payInfo type:(PayType)type  callback:(PSPayCallback)callback {
     self.payCallback = callback;
     self.payInfo = payInfo;
+    //判断微信是否安装
+    if ([self.payInfo.payment isEqualToString:@"WEIXIN"]) {
+        BOOL Installed = [WXApi isWXAppInstalled];
+        if (!Installed) {
+            if (self.payCallback) {
+                NSString *error_msg = NSLocalizedString(@"weChat not installed", @"微信未安装");
+                NSError *error = [NSError errorWithDomain:error_msg code:102 userInfo:nil];
+                self.payCallback(NO,error);
+                return;
+            }
+        }
+    }
     self.payHandler = [self buildPayHandlerWith:payInfo];
     if (self.payHandler) {
         @weakify(self)
@@ -181,6 +193,7 @@
 #pragma mark - WXApiDelegate
 - (void)onResp:(BaseResp*)resp{
     [self removeEnterForegroundNotification];
+    
     if ([resp isKindOfClass:[PayResp class]]) {
         PayResp *response = (PayResp *)resp;
         NSLog(@"**微信支付结果***%d",response.errCode);
@@ -211,6 +224,7 @@
                 break;
         }
     }
+    
 }
 
 

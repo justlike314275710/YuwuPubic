@@ -19,7 +19,8 @@
 #import "PSTipsConstants.h"
 #import "XXEmptyView.h"
 #import "UIView+Empty.h"
-@interface PSREmittanceRecodeViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "UIScrollView+EmptyDataSet.h"
+@interface PSREmittanceRecodeViewController ()<UITableViewDelegate,UITableViewDataSource,DZNEmptyDataSetSource,DZNEmptyDataSetDelegate,UIScrollViewDelegate>
 @property (nonatomic, strong) UITableView *myTableview;
 
 @end
@@ -128,7 +129,6 @@
     [self.myTableview reloadData];
 }
 
-
 #pragma mark - TouchEvent
 
 #pragma mark - Delegate
@@ -151,6 +151,35 @@
     return 80;
 }
 
+#pragma mark - DZNEmptyDataSetSource and DZNEmptyDataSetDelegate
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
+    
+    PSRemittanceRecodeViewModel *RemittanceRecodeViewModel  =(PSRemittanceRecodeViewModel *)self.viewModel;
+    UIImage *emptyImage = RemittanceRecodeViewModel.dataStatus == PSDataEmpty ? [UIImage imageNamed:@"universalNoneIcon"] : [UIImage imageNamed:@"universalNetErrorIcon"];
+    return RemittanceRecodeViewModel.dataStatus == PSDataInitial ? nil : emptyImage;
+}
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView {
+    PSRemittanceRecodeViewModel *RemittanceRecodeViewModel  =(PSRemittanceRecodeViewModel *)self.viewModel;
+    NSString *tips = RemittanceRecodeViewModel.dataStatus == PSDataEmpty ? EMPTY_CONTENT : NET_ERROR;
+    return RemittanceRecodeViewModel.dataStatus == PSDataInitial ? nil : [[NSAttributedString alloc] initWithString:tips attributes:@{NSFontAttributeName:AppBaseTextFont1,NSForegroundColorAttributeName:AppBaseTextColor1}];
+    
+}
+
+- (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state {
+    PSRemittanceRecodeViewModel *RemittanceRecodeViewModel  =(PSRemittanceRecodeViewModel *)self.viewModel;
+    return RemittanceRecodeViewModel.dataStatus == PSDataError ? [[NSAttributedString alloc] initWithString:@"点击加载" attributes:@{NSFontAttributeName:AppBaseTextFont1,NSForegroundColorAttributeName:AppBaseTextColor1}] : nil;
+}
+
+- (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view {
+    [self p_refreshData];
+}
+
+- (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button {
+    [self p_refreshData];
+}
+
+
 #pragma mark - Setting&&Getting
 - (UITableView *)myTableview {
     if (!_myTableview) {
@@ -160,6 +189,9 @@
 //        _myTableview.separatorStyle = UITableViewCellSeparatorStyleNone;
         _myTableview.dataSource = self;
         _myTableview.delegate = self;
+        _myTableview.emptyDataSetDelegate=self;
+        _myTableview.emptyDataSetSource=self;
+        
     }
     return _myTableview;
 }

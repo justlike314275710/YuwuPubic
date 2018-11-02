@@ -73,6 +73,7 @@
 }
 
 - (void)goPurchase {
+    
     self.wechatPayRequest = [PSWechatPayRequest new];
     self.wechatPayRequest.jailId = self.payInfo.jailId;
     self.wechatPayRequest.familyId = self.payInfo.familyId;
@@ -116,7 +117,10 @@
     request.timeStamp = [self.wechatInfo.timestamp intValue];
     request.sign = self.wechatInfo.sign;
     [WXApi sendReq:request];
+    
 }
+
+
 
 - (void)goPay {
     [self goPurchase];

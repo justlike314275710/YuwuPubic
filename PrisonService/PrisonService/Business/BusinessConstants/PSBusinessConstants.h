@@ -26,10 +26,9 @@
 //#define ServerUrl [NSString stringWithFormat:@"%@/ywgk-app",ServerDomain] //生产
 //#define ServerUrl [NSString stringWithFormat:@"%@/ywgk-app-auth",ServerDomain] //开发
 //#define ServerUrl [NSString stringWithFormat:@"%@",ServerDomain] //杨
-
-
 //测试环境接口地址
 #define ServerUrl [NSString stringWithFormat:@"%@/ywgk-app-demo",ServerDomain]
+
 //图片上传地址
 //#define UploadServerUrl [NSString stringWithFormat:@"%@/image-server",ServerDomain]
 #define UploadServerUrl @"http://120.78.190.101:1339/image-server"
@@ -48,7 +47,6 @@
 //授权认证平台测试地址
 #define EmallHostUrl @"http://10.10.10.16:8081"
 #define EmallUrl @"http://10.10.10.16:805"
-
 
 //授权认证平台生产地址
 //#define EmallUrl @"http://m.trade.prisonpublic.com" //电子商城

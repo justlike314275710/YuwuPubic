@@ -44,9 +44,9 @@
         flag = NO;
         return flag;
     }
-    NSString *regex2 = @"^(([0-9]+\\.[0-9]*[1-9][0-9]*)|([0-9]*[1-9][0-9]*\\.[0-9]+)|([0-9]*[1-9][0-9]*))$";
-    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
-    return [identityCardPredicate evaluateWithObject:money];
+    NSString *phoneRegex = @"^[0-9]+(\\.[0-9]{1,2})?$";
+    NSPredicate *regex2 = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [regex2 evaluateWithObject:money];
 }
 
 
