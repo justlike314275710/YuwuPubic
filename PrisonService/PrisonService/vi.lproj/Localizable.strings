@@ -311,7 +311,7 @@
 "family_remittance"="Các gia đình kiều hối";
 "remittance_record"="Hồ sơ gửi tiền";
 "remittance_amount"="Thanh toán số tiền";
-"please_enter_amount"="Hãy nhập vào số tiền";
+"please_enter_remittance_amount"="Hãy nhập vào thanh toán số tiền";
 "alipay_payment"="Trả tiền bảo";
 "weChat_payment"="Vi tin trả";
 "immediate_remittance"="Tiến hành ngay lập tức.";
@@ -329,6 +329,8 @@
 "WeChat"="Vi thư";
 "weChat not installed"="Vi tin chưa được cài đặt";
 //"determine"="确定";
+"Up to two decimal places"="Tối đa hai số thập phân";
+"Incorrect data format"="Định dạng dữ liệu có sai lầm";
 
 
 

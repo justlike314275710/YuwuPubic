@@ -9,5 +9,5 @@
 #import "PSViewModel.h"
 
 @interface PSVersonUpdateViewModel : PSViewModel
-
+- (void)VersonUpdate;
 @end

@@ -137,7 +137,10 @@
          PSLegalServiceTableViewCell*cell= [tableView dequeueReusableCellWithIdentifier:@"PSLegalServiceTableViewCell"];
 
         [cell.moreButton bk_whenTapped:^{
-             [self p_insertMoreServiceVC];
+            NSString*coming_soon=
+            NSLocalizedString(@"coming_soon", @"敬请期待");
+            [PSTipsView showTips:coming_soon];
+//             [self p_insertMoreServiceVC];
         }];
         [cell.FinanceButton bk_whenTapped:^{
              NSString*coming_soon=

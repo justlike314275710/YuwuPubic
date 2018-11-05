@@ -26,9 +26,16 @@
 
 - (void)checkDataWithCallback:(CheckDataCallback)callback {
     
+    if (self.money.length <=0) {
+        if (callback) {
+            NSString*please_enter_phone_number=NSLocalizedString(@"please_enter_remittance_amount",@"请输入汇款金额");
+            callback(NO,please_enter_phone_number);
+        }
+        return;
+    }
     if (![self validaMoney:self.money]) {
         if (callback) {
-            NSString*please_enter_phone_number=NSLocalizedString(@"please_input_the_correct_amount", @"请输入正确的金额");
+            NSString*please_enter_phone_number=NSLocalizedString(@"please_input_the_correct_amount",@"请输入正确的金额");
             callback(NO,please_enter_phone_number);
         }
         return;

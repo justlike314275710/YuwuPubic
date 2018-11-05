@@ -322,7 +322,7 @@
             [self renderContents];
             [self renderRightBarButtonItem];
        
-            //[self VersonUpdate];
+//            [self VersonUpdate];
             
         }];
     }

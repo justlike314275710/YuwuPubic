@@ -49,7 +49,6 @@
     [WXApi registerApp:WECHAT_APPID];
 }
 
-
 - (BOOL)handleURL:(NSURL *)url {
     if ([url.host isEqualToString:@"safepay"]) {
         //跳转支付宝钱包进行支付，处理支付结果
@@ -60,12 +59,6 @@
     }
     return YES;
 }
-
-
-
-
-
-
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
     return [self handleURL:url];

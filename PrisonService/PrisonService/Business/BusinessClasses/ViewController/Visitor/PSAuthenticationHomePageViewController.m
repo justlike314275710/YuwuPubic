@@ -28,6 +28,7 @@
 #import "PSHomeViewModel.h"
 #import "JXButton.h"
 #import "PSCache.h"
+#import "PSVersonUpdateViewModel.h"
 
 
 
@@ -54,6 +55,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //更新
+    PSVersonUpdateViewModel *UpdateViewModel = [PSVersonUpdateViewModel new];
+    [UpdateViewModel VersonUpdate];
     
     [self refreshDataFromLoginStatus];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showDot) name:AppDotChange object:nil];
@@ -287,8 +291,6 @@
         self.dotLable.hidden = NO;
     }
     
-    
-    
     UIView*prisonIntroduceView=[UIView new];
     prisonIntroduceView.backgroundColor=[UIColor whiteColor];
     [self.view addSubview:prisonIntroduceView];
@@ -394,8 +396,6 @@
         [self.navigationController pushViewController:lawViewController animated:YES];
     }];
     
-    
-    
     UIView *verDashLine = [[UIView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2-sidePadding+1, 100, SCREEN_WIDTH/2-sidePadding-2, 1)];
     [homeHallView addSubview:verDashLine];
     verDashLine.backgroundColor=AppBaseLineColor;
@@ -423,10 +423,7 @@
     
 }
 
-
-
 #pragma mark  - setter & getter
-
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self name:AppDotChange object:nil];
@@ -461,14 +458,5 @@
     
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
