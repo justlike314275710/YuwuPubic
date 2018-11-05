@@ -47,9 +47,11 @@
     
     PSLoginViewModel *loginViewModel =[[PSLoginViewModel alloc]init];
     [loginViewModel loginCompleted:^(PSResponse *response) {
-       self.RegistrationModel=loginViewModel.session.registrations[0];
+        
+       //self.RegistrationModel=loginViewModel.session.registrations[0];
+        
           NSString*repalyTime=[self.RegistrationModel.createdAt timestampToDateString]?[self.RegistrationModel.createdAt timestampToDateString]:[[PSSessionManager sharedInstance].session.families.createdAt timestampToDateString];
-        if ([self.RegistrationModel.status isEqualToString:@"PENDING"]) {
+        if ([loginViewModel.session.status isEqualToString:@"PENDING"]) {
             NSString*session_PENDING=NSLocalizedString(@"session_PENDING", @"待审核");
             NSString*session_PENDING_title=NSLocalizedString(@"session_PENDING_title", @"您于%@提交的认证申请正在审核,请耐心等待");
              _loginStatus = PSLoginPending;
@@ -57,7 +59,7 @@
             _subTitle= [NSString stringWithFormat:session_PENDING_title,repalyTime];
             _btnTitle=@"";
         }
-        else if ([self.RegistrationModel.status isEqualToString:@"DENIED"]){
+        else if ([loginViewModel.session.status isEqualToString:@"DENIED"]){
             _loginStatus=PSLoginDenied;
             NSString*session_DENIED=NSLocalizedString(@"session_DENIED", @"未通过");
             NSString*session_DENIED_title=NSLocalizedString(@"session_DENIED_title", @"您于%@提交的认证申请没有通过审核,请重新认证");
@@ -67,7 +69,7 @@
             _subTitle= [NSString stringWithFormat:session_DENIED_title,repalyTime];
             _btnTitle=session_DENIED_btntitle;
         }
-        else if ([self.RegistrationModel.status isEqualToString:@"PASSED"]){
+        else if ([loginViewModel.session.status isEqualToString:@"PASSED"]){
             _loginStatus = PSLoginPassed;
             NSString*session_PASSED=NSLocalizedString(@"session_PASSED", @"已认证");
               _titleSting=session_PASSED;

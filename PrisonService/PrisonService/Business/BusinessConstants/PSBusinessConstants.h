@@ -49,8 +49,8 @@
 //#define EmallUrl @"http://10.10.10.16:805"
 
 //授权认证平台生产地址
-#define EmallUrl @"http://m.trade.prisonpublic.com" //电子商城
-#define EmallHostUrl @"http://api.auth.prisonpublic.com"
+#define EmallUrl @"https://m.trade.prisonpublic.com" //电子商城
+#define EmallHostUrl @"https://api.auth.prisonpublic.com"
 
 //监狱详情地址 后面接jailId
 #define PrisonDetailUrl [NSString stringWithFormat:@"%@/h5/#/prison/detail/",H5ServerDomain]
